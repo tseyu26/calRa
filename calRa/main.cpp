@@ -1,15 +1,3 @@
-// The program is designed to calculate the Ra according to the csv file.
-// It will read the data in csv file.
-// And calculate the Ra by the formula:
-// 
-// $Ra = \frac{1}{l} \int_{0}^{l} |y(x)| dx$
-// 
-// 
-// 
-// Created by tseyu
-// 
-// Date: 2023-03-01
-
 #include <iostream>
 #include <vector>
 #include <string>
@@ -22,7 +10,7 @@ int main()
 {
     intro();
     std::string fileName; // To confirm the file's name.
-    std::cout << "Enter the name of the csv file end up with .csv.\n";
+    std::cout << "Enter the name of the csv file ended with .csv.\n";
     std::cin >> fileName;
 
     // Let data store in row, then store the in content. 
@@ -78,6 +66,10 @@ int main()
     {
         std::cout << length[i] << "    :    " << height[i] << std::endl;
     }*/
+
+    calUni(height);
+    std::cin.get();
+    std::cin.get();
 
     return 0;
 }

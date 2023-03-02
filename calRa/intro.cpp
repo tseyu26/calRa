@@ -19,9 +19,7 @@ void intro()
         << "*\n"
         << "* D means average, \\delta means standard deviation\n"
         << "* \n"
-        << "* Created by tseyu\n"
-        << "* \n"
-        << "* Date: 2023-03-01\n"
+        << "* Created by tseyu on 3/1/2023\n"
         << "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \n"
         << "\n";
 }
