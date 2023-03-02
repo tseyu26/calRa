@@ -21,6 +21,9 @@
     <ClCompile Include="intro.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="calUni.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="read.h">
