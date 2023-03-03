@@ -131,6 +131,7 @@
     <ClCompile Include="calUni.cpp" />
     <ClCompile Include="intro.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="writeCsv.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="read.h" />

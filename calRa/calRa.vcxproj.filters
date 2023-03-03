@@ -24,6 +24,9 @@
     <ClCompile Include="calUni.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="writeCsv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="read.h">

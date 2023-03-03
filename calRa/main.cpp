@@ -68,6 +68,8 @@ int main()
     }*/
 
     calUni(height);
+
+    writeCsv("test.csv", length, height);
     std::cin.get();
     std::cin.get();
 
