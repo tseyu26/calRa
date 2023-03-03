@@ -69,7 +69,8 @@ int main()
 
     calUni(height);
 
-    writeCsv("test.csv", length, height);
+    std::string newFileName = "new" + fileName;
+    writeCsv(newFileName, length, height);
     std::cin.get();
     std::cin.get();
 
