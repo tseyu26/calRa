@@ -61,6 +61,8 @@ int main()
     }
 
 
+    //
+
     // To examine the correctness of reading the csv
     /*for (int i{0}; i < length.size();i++)
     {
@@ -71,6 +73,8 @@ int main()
 
     std::string newFileName = "new" + fileName;
     writeCsv(newFileName, length, height);
+    abs_csvVal(height);
+    displayVector(height);
     std::cin.get();
     std::cin.get();
 
