@@ -74,7 +74,9 @@ int main()
     std::string newFileName = "new" + fileName;
     writeCsv(newFileName, length, height);
     abs_csvVal(height);
-    displayVector(height);
+
+    // displayVector(height); examine the abs is done!
+
     std::cin.get();
     std::cin.get();
 

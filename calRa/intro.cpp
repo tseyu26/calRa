@@ -17,7 +17,7 @@ void intro()
         << "*\n"
         << "* $\\tau = (\\delta/D) * 100% $\n"
         << "*\n"
-        << "* D means average, \\delta means standard deviation\n"
+        << "* D means average, \\delta means standard deviation (ensure the unit is correct!)\n"
         << "* \n"
         << "* Created by tseyu on 3/1/2023\n"
         << "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \n"
