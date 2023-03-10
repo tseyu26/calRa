@@ -71,7 +71,7 @@ int main()
 
     calUni(height);
 
-    std::string newFileName = "new" + fileName;
+    std::string newFileName = "new_" + fileName;
     writeCsv(newFileName, length, height);
     abs_csvVal(height);
 

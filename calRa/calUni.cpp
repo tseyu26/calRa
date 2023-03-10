@@ -9,10 +9,19 @@ void calUni(std::vector<double> vec)
     double sumDeviation{ 0.0 };
     double average{ 0.0 };
     double delta{ 0.0 };
+
+    // change the unit
+    for(int i{0};i< vec.size();i++)
+    {
+        vec[i] = vec[i] * 1.0e-10;
+    }
+
+
     for (int i{0}; i < vec.size(); i++)
     {
         sum += vec[i];
     }
+
     average = sum / vec.size();
 
     for (int j{0}; j < vec.size(); j++)
