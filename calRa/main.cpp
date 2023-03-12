@@ -10,7 +10,7 @@ int main()
 {
     intro();
     std::string fileName; // To confirm the file's name.
-    std::cout << "Enter the name of the csv file ended with .csv.\n";
+    std::cout << "Enter the name of the csv file ended with .csv\n";
     std::cin >> fileName;
 
     // Let data store in row, then store the in content. 
@@ -22,7 +22,7 @@ int main()
     std::fstream file(fileName, std::ios::in); // Open the file.
     if (file.is_open())
     {
-        std::cout << "reading...\n\n";
+        //std::cout << "reading...\n\n";
         int countLine{ 0 };
         while (std::getline(file, line))
         {
@@ -60,22 +60,20 @@ int main()
         height.push_back(atof(tmp_2.c_str()));
     }
 
-
-    //
-
     // To examine the correctness of reading the csv
     /*for (int i{0}; i < length.size();i++)
     {
         std::cout << length[i] << "    :    " << height[i] << std::endl;
     }*/
 
-    calUni(height);
-
     std::string newFileName = "new_" + fileName;
     writeCsv(newFileName, length, height);
-    abs_csvVal(height);
 
-    // displayVector(height); examine the abs is done!
+    double Ra{ 0.0 };
+    Ra = calRa(height, length);
+    std::cout << "Ra is " << Ra << " m.\n";
+
+    calUni(height);
 
     std::cin.get();
     std::cin.get();
