@@ -15,6 +15,8 @@ void intro()
         << "*\n"
         << "* Integration is calculated by the Trapezium method.\n"
         << "*\n"
+        << "* It should be done by Least Square Method.\n"
+        << "*\n"
         << "* And calculate the uniformity by the formula:\n"
         << "*\n"
         << "* $\\tau = (\\delta/D) * 100% $\n"
