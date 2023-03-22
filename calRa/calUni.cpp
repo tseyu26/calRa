@@ -31,7 +31,7 @@ void calUni(std::vector<double> vec)
 
     delta = sqrt(sumDeviation / vec.size());
 
-    std::cout << "The average is " << average << std::endl;
-    std::cout << "The delta is " << delta << std::endl;
+    // std::cout << "The average is " << average << std::endl;
+    // std::cout << "The delta is " << delta << std::endl;
     std::cout << "The uniformity is " << (average > 0 ? delta / average :-delta / average) << std::endl;
 }

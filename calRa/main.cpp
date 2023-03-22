@@ -9,9 +9,13 @@
 int main()
 {
     intro();
+    double resistThickness;
     std::string fileName; // To confirm the file's name.
     std::cout << "Enter the name of the csv file ended with .csv\n";
     std::cin >> fileName;
+
+    std::cout << "Enter the thickness of the resist( the unit is A): ";
+    std::cin >> resistThickness;
 
     // Let data store in row, then store the in content. 
     std::vector<std::vector<std::string>> content; // Set the vector content with vector row of string 
@@ -60,6 +64,14 @@ int main()
         height.push_back(atof(tmp_2.c_str()));
     }
 
+
+    for (int i{0}; i < content.size() - 1;i++)
+    {
+        height[i] = height[i] + resistThickness;
+    }
+
+
+
     // To examine the correctness of reading the csv
     /*for (int i{0}; i < length.size();i++)
     {
@@ -71,7 +83,7 @@ int main()
 
     double Ra{ 0.0 };
     Ra = calRa(height, length);
-    std::cout << "Ra is " << Ra << " m.\n";
+    std::cout << "Ra is " << Ra/1e-6 << " um" << std::endl;
 
     calUni(height);
 
