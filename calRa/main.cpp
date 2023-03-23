@@ -64,26 +64,24 @@ int main()
         height.push_back(atof(tmp_2.c_str()));
     }
 
-
-    for (int i{0}; i < content.size() - 1;i++)
-    {
-        height[i] = height[i] + resistThickness;
-    }
-
-
-
     // To examine the correctness of reading the csv
     /*for (int i{0}; i < length.size();i++)
     {
         std::cout << length[i] << "    :    " << height[i] << std::endl;
     }*/
 
-    std::string newFileName = "new_" + fileName;
-    writeCsv(newFileName, length, height);
+    //std::string newFileName = "new_" + fileName;
+    //writeCsv(newFileName, length, height);
 
     double Ra{ 0.0 };
     Ra = calRa(height, length);
     std::cout << "Ra is " << Ra/1e-6 << " um" << std::endl;
+
+
+    for (int i{ 0 }; i < content.size() - 1; i++)
+    {
+        height[i] = height[i] + resistThickness;
+    }
 
     calUni(height);
 
